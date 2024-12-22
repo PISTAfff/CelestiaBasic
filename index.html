@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="ready.css">
+    <!-- Css -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!-- Fonts -->
+
+    <title>
+        Celestia
+    </title>
+
+</head>
+
+<body>
+    <!-- webpage -->
+
+    <!-- Welcoming Section -->
+    <div id="sectionZero" class="dfCcc sectionZero section">
+        <hr class="w-25 lines mt-1" />
+        <hr class="w-35 lines mb-0" />
+        <div class="titleContainer dfcc w-100">
+            <h1 class="title mt-1 mb-1">
+                Celestia
+            </h1>
+        </div>
+        <hr class="w-35 lines mt-0" />
+        <hr class="w-25 lines mb-1" />
+        <button id="ExploreSolar" class="btn transition mt-3" onclick="showSectionOne()">
+            Explore The Solar System
+        </button>
+    </div>
+    <!-- Welcoming Section -->
+
+    <div id="sectionOne" class="sectionOne section dfcs HideDown noTransition Dexists">
+        <div class="textContainer dfCcs w-50 h-100 px-5">
+            <h1>What Is Celestia?</h1>
+            <p class="celestiaDescription">
+                is a website about the solar system. It provides simple information about the planets, our
+                Moon, and the
+                Sun, with pictures and facts to explore.
+            </p>
+            <br />
+            <div class="buttonGroupContainer dfsc w-100">
+                <button class="btn transition" onclick="showSectionZero()">Back</button>
+                <button class="btn transition" onclick="from3ToUp('sectionOne', 'solarSystemContainer',true)">
+                    More
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="solarSystemContainer" class="solarSystemContainer dfcc HideDown noTransition Dexists">
+        <div class="textContainerSolar dfCcc ">
+            <h1>About The Solar System</h1>
+            <p class="description">
+                The Solar System is our home in the universe. It consists of the Sun, eight planets, their moons, and
+                countless other celestial objects like asteroids and comets. From the blazing Sun at the center to the
+                icy
+                edges of Neptune, every part has its own unique story to tell.
+            </p>
+            <p class="description">
+                Explore the planets, discover fascinating facts, and marvel at the beauty of the cosmos. Whether it's
+                the
+                fiery surface of Venus or the rings of Saturn, there's so much to learn and appreciate.
+            </p>
+
+        </div>
+        <div class="buttonGroupContainerWide dfcc">
+            <button class="btn transition" onclick="from3ToUp('solarSystemContainer', 'sectionOne',false)">Back</button>
+            <button class="btn transition" onclick="from3ToUp('solarSystemContainer', 'sectionThree',true)">Start
+                Exploring</button>
+        </div>
+    </div>
+
+    <!-- Planet Sections -->
+    <div id="sectionThree" class="sectionThree section dfcs HideDown noTransition Dexists">
+        <div class="textContainer dfCcs w-100 h-100 px-5">
+            <h1>About the Sun</h1>
+            <p class="description w-50">
+                The Sun is the star at the center of the solar system. It provides light and energy necessary for life
+                on
+                Earth.
+            </p>
+            <br />
+            <div class="buttonGroupContainer dfsc w-100">
+                <button class="btn transition"
+                    onclick="from3ToUp('sectionThree', 'solarSystemContainer',false)">Back</button>
+                <button class="btn transition" onclick="from3ToUp('sectionThree', 'sectionFour',true)">Next</button>
+            </div>
+        </div>
+        <div id="sunContainer3D" class="planet h-100">
+
+        </div>
+    </div>
+
+    <div id="sectionFour" class="sectionFour section dfcs HideDown noTransition Dexists">
+        <div class="textContainer dfCcs w-100  h-100 px-5">
+            <h1>About Mercury</h1>
+            <p class="description w-50">
+                Mercury is the closest planet to the Sun and is known for its extreme temperatures.
+            </p>
+            <br />
+            <div class="buttonGroupContainer dfsc w-100">
+                <button class="btn transition" onclick="from3ToUp('sectionFour', 'sectionThree',false)">Back</button>
+                <button class="btn transition" onclick="from3ToUp('sectionFour', 'sectionFive',true)">Next</button>
+            </div>
+        </div>
+        <div id="mercuryContainer3D" class="planet dfcc h-100">
+
+        </div>
+    </div>
+
+    <div id="sectionFive" class="sectionFive section dfcs HideDown noTransition Dexists">
+        <div class="textContainer dfCcs w-100  h-100 px-5">
+            <h1>About Venus</h1>
+            <p class="description w-50">
+                Venus is the second planet from the Sun and is known for its thick, toxic atmosphere.
+            </p>
+            <br />
+            <div class="buttonGroupContainer dfsc w-100">
+                <button class="btn transition" onclick="from3ToUp('sectionFive', 'sectionFour',false)">Back</button>
+                <button class="btn transition" onclick="from3ToUp('sectionFive', 'sectionSix',true)">Next</button>
+            </div>
+        </div>
+        <div id="venusContainer3D" class="planet dfcc h-100">
+
+        </div>
+    </div>
+
+    <div id="sectionSix" class="sectionSix section dfcs HideDown noTransition Dexists">
+        <div class="textContainer dfCcs w-100  h-100 px-5">
+            <h1>About Earth</h1>
+            <p class="description w-50">
+                Earth is the third planet from the Sun and the only known planet to support life.
+            </p>
+            <br />
+            <div class="buttonGroupContainer dfsc w-100">
+                <button class="btn transition" onclick="from3ToUp('sectionSix', 'sectionFive',false)">Back</button>
+                <button class="btn transition" onclick="from3ToUp('sectionSix', 'sectionSixOne',true)">Next</button>
+            </div>
+        </div>
+        <div id="earthContainer3D" class="planet dfcc h-100">
+
+        </div>
+    </div>
+    <div id="sectionSixOne" class="sectionSix section dfcs HideDown noTransition Dexists">
+        <div class="textContainer dfCcs w-100  h-100 px-5">
+            <h1>About Moon</h1>
+            <p class="description w-50">
+                Our Moon.
+            </p>
+            <br />
+            <div class="buttonGroupContainer dfsc w-100">
+                <button class="btn transition" onclick="from3ToUp('sectionSixOne', 'sectionSix',false)">Back</button>
+                <button class="btn transition" onclick="from3ToUp('sectionSixOne', 'sectionSeven',true)">Next</button>
+            </div>
+        </div>
+        <div id="moonContainer3D" class="planet dfcc h-100">
+
+        </div>
+    </div>
+    <div id="sectionSeven" class="sectionSeven section dfcs HideDown noTransition Dexists">
+        <div class="textContainer dfCcs w-100  h-100 px-5">
+            <h1>About Mars</h1>
+            <p class="description w-50">
+                Mars is the fourth planet from the Sun, known as the Red Planet due to its reddish appearance.
+            </p>
+            <br />
+            <div class="buttonGroupContainer dfsc w-100">
+                <button class="btn transition" onclick="from3ToUp('sectionSeven', 'sectionSixOne',false)">Back</button>
+                <button class="btn transition" onclick="from3ToUp('sectionSeven', 'sectionEight',true)">Next</button>
+
+            </div>
+        </div>
+        <div id="marsContainer3D" class="planet dfcc h-100">
+
+        </div>
+    </div>
+
+    <div id="sectionEight" class="sectionEight section dfcs HideDown noTransition Dexists">
+        <div class="textContainer dfCcs w-100  h-100 px-5">
+            <h1>About Jupiter</h1>
+            <p class="description w-50">
+                Jupiter is the largest planet in the solar system, known for its Great Red Spot and many moons.
+            </p>
+            <br />
+            <div class="buttonGroupContainer dfsc w-100">
+                <button class="btn transition" onclick="from3ToUp('sectionEight', 'sectionSeven',false)">Back</button>
+                <button class="btn transition" onclick="from3ToUp('sectionEight', 'sectionNine',true)">Next</button>
+            </div>
+        </div>
+        <div id="jupiterContainer3D" class="planet dfcc h-100">
+
+        </div>
+    </div>
+
+    <div id="sectionNine" class="sectionNine section dfcs HideDown noTransition Dexists">
+        <div class="textContainer dfCcs w-100  h-100 px-5">
+            <h1>About Saturn</h1>
+            <p class="description w-50">
+                Saturn is the sixth planet from the Sun, famous for its prominent ring system.
+            </p>
+            <br />
+            <div class="buttonGroupContainer dfsc w-100">
+                <button class="btn transition" onclick="from3ToUp('sectionNine', 'sectionEight',false)">Back</button>
+                <button class="btn transition" onclick="from3ToUp('sectionNine', 'sectionTen',true)">Next</button>
+            </div>
+        </div>
+        <div id="saturnContainer3D" class="planet dfcc h-100">
+
+        </div>
+    </div>
+
+    <div id="sectionTen" class="sectionTen section dfcs HideDown noTransition Dexists">
+        <div class="textContainer dfCcs w-100  h-100 px-5">
+            <h1>About Uranus</h1>
+            <p class="description w-50">
+                Uranus is the seventh planet from the Sun, known for its unique sideways rotation.
+            </p>
+            <br />
+            <div class="buttonGroupContainer dfsc w-100">
+                <button class="btn transition" onclick="from3ToUp('sectionTen', 'sectionNine',false)">Back</button>
+                <button class="btn transition" onclick="from3ToUp('sectionTen', 'sectionEleven',true)">Next</button>
+            </div>
+        </div>
+        <div id="uranusContainer3D" class="planet dfcc h-100">
+
+        </div>
+    </div>
+
+    <div id="sectionEleven" class="sectionEleven section dfcs HideDown noTransition Dexists">
+        <div class="textContainer dfCcs w-100  h-100 px-5">
+            <h1>About Neptune</h1>
+            <p class="description w-50">
+                Neptune is the eighth and farthest planet from the Sun, known for its deep blue color and strong winds.
+            </p>
+            <br />
+            <div class="buttonGroupContainer dfsc w-100">
+                <button class="btn transition" onclick="from3ToUp('sectionEleven', 'sectionTen',false)">Back</button>
+                <button class="btn transition" onclick="goBack('sectionEleven')">Start All Over Again</button>
+            </div>
+        </div>
+        <div id="neptuneContainer3D" class="planet dfcc h-100">
+
+        </div>
+    </div>
+    <!-- Planet Sections -->
+
+
+    <!-- webpage -->
+
+    <!-- imports kinda -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        THREE.GLTFLoader = function () {
+            return {
+                load: function (url, onLoad, onProgress, onError) {
+                    console.warn('GLTFLoader not fully implemented');
+                    onError('GLTFLoader not available');
+                }
+            };
+        };
+    </script>
+    <!-- imports kinda -->
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+    <!-- Main Script -->
+
+    <!-- solar System 3D Load Script -->
+    <script src="solarSystem.js"></script>
+    <!-- solar System 3D Load Script -->
+
+    <!-- Planets 3D Load Script -->
+    <script src="planets.js"></script>
+    <!-- Planets 3D Load Script -->
+
+    <!-- stars -->
+    <script>
+        setInterval(() => {
+            const star = document.createElement('div');
+            star.className = 'star2';
+            const offsetX = Math.floor(Math.random() * window.innerWidth);
+            const offsetY = Math.floor(Math.random() * window.innerHeight);
+            star.style.left = `${offsetX}px`;
+            star.style.top = `${offsetY}px`;
+            document.body.appendChild(star);
+            setTimeout(() => {
+                star.remove();
+            }, Math.floor(Math.random() * 1000) + 2000);
+        }, 10);
+    </script>
+    <!-- stars -->
+
+    <!-- stars That Follow The Mouse -->
+    <script>
+        document.addEventListener('mousemove', (e) => {
+            const star = document.createElement('div');
+            star.className = 'star';
+            const offsetX = Math.floor(Math.random() * 51) - 25;
+            const offsetY = Math.floor(Math.random() * 51) - 25;
+            star.style.left = `${e.pageX + offsetX}px`;
+            star.style.top = `${e.pageY + offsetY}px`;
+            document.body.appendChild(star);
+            setTimeout(() => {
+                star.remove();
+            }, 975);
+        });
+    </script>
+    <!-- stars That Follow The Mouse -->
+
+</body>
+
+</html>

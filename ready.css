@@ -1,0 +1,119 @@
+.dfcc,
+.dfCcc,
+.dfcs,
+.dfsc,
+.dfss,
+.dfCcs,
+.dfCsc,
+.dfCss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dfCcc,
+.dfCsc,
+.dfCss,
+.dfCcs {
+  flex-direction: column;
+}
+.dfcs,
+.dfCcs,
+.dfCss,
+.dfss {
+  align-items: start;
+}
+.dfsc,
+.dfCsc,
+.dfCss,
+.dfss {
+  justify-content: start;
+}
+.w-0 {
+  width: 0;
+}
+.w-25 {
+  width: 25%;
+}
+.w-35 {
+  width: 35%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-100 {
+  width: 100%;
+}
+.h-0 {
+  height: 0;
+}
+.h-25 {
+  height: 25%;
+}
+.h-50 {
+  height: 50%;
+}
+.h-75 {
+  height: 75%;
+}
+.h-100 {
+  height: 100%;
+}
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.px-3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.px-4 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.px-5 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.mt-0 {
+  margin-top: 0rem;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+.mb-0 {
+  margin-bottom: 0rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+.mb-5 {
+  margin-bottom: 5rem;
+}
